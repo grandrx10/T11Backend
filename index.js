@@ -4,7 +4,7 @@ const routes = require("./routes");
 const app = express();
 
 const cors = require("cors");
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+const FRONTEND_URL = "t11frontend-production.up.railway.app" //|| "http://localhost:5173";
 app.use(cors({
     origin: FRONTEND_URL, // Replace with your frontend's URL
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
